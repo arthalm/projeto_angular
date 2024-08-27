@@ -1,0 +1,10 @@
+<p>Seja bem vindo, Arthur!</p>
+
+<form>
+    <label for="nome">Digite o seu nome:</label>
+    <input id="nome" name="nome" type="text" #nome (change)="alterarMensagem(nome.value)">
+</form>
+
+<div class="msg">
+    <p>{{mensagem}}</p>
+</div>
